@@ -1,0 +1,4 @@
+p_Accountno,p_password,p_payname,p_paybank,p_ddamt
+IQ11802,welcome,siva,sbi,500
+IQ11806,Goutham@1539,sai,apgb,2500
+IQ11801,Bhans789!,kk,sbi,10000
