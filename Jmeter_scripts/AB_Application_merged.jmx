@@ -501,7 +501,7 @@ def accno = vars.get(&quot;c_Accno&quot;);
 def mainval=accno+&quot;,&quot;+value;
 //log.info(&quot;***********main val is &quot;+mainval);
 
-file1 = new FileOutputStream(&quot;C:/Users/sivasai/Desktop/Arabian_Bank/TestScripts_Sprint_2/Jmeter_scripts/Ab_AcSummary/AccountBalance.txt&quot;,true);
+file1 = new FileOutputStream(&quot;C:/outputs_Ab/Ab_accsummary/AccountBalance.txt&quot;,true);
 
 file2 = new PrintStream(file1);
 file2.println(mainval);
@@ -631,7 +631,7 @@ file2.close();</stringProp>
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
-          <stringProp name="filename">C:/Users/sivasai/Desktop/Arabian_Bank/TestScripts_Sprint_2/Jmeter_scripts/Ab_AcSummary/Accno_pwd_csv_testdata.csv</stringProp>
+          <stringProp name="filename">C:\TestData_AB\AB_Testdata\Accno_pwd_csv_testdata.csv</stringProp>
           <boolProp name="ignoreFirstLine">true</boolProp>
           <boolProp name="quotedData">false</boolProp>
           <boolProp name="recycle">true</boolProp>
@@ -652,7 +652,7 @@ file2.close();</stringProp>
         </elementProp>
       </PostThreadGroup>
       <hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="AB_Acsummary_T06_click on logout" enabled="false">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="AB_Acsummary_T06_click on logout" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -1423,7 +1423,7 @@ file2.close();</stringProp>
                 <stringProp name="parameters"></stringProp>
                 <stringProp name="script">def cAmount = vars.get(&quot;c_cmsionAmount&quot;);
 
-file1 = new FileOutputStream(&quot;C:/Users/sivasai/Desktop/Arabian_Bank/TestScripts_Sprint_2/Jmeter_scripts/Ab_DDRequest/commisionAmount.txt&quot;,true);
+file1 = new FileOutputStream(&quot;C:/outputs_Ab/Ab_DDRequest/commisionAmount.txt&quot;,true);
 
 file2 = new PrintStream(file1);
 file2.println(cAmount);
@@ -1644,7 +1644,7 @@ file2.close();</stringProp>
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
-          <stringProp name="filename">C:/Users/sivasai/Desktop/Arabian_Bank/TestScripts_Sprint_2/Jmeter_scripts/Ab_DDRequest/AB_request_testdata.txt</stringProp>
+          <stringProp name="filename">C:\TestData_AB\AB_Testdata\AB_request_testdata.txt</stringProp>
           <boolProp name="ignoreFirstLine">true</boolProp>
           <boolProp name="quotedData">false</boolProp>
           <boolProp name="recycle">true</boolProp>
@@ -3004,7 +3004,7 @@ if(acbal&gt;amount){
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
-          <stringProp name="filename">C:/Users/sivasai/Desktop/Arabian_Bank/TestScripts_Sprint_2/Jmeter_scripts/AB_FundTransfer/Ab_fundtransfer_testdata.txt</stringProp>
+          <stringProp name="filename">C:\TestData_AB\AB_Testdata\Ab_fundtransfer_testdata.txt</stringProp>
           <boolProp name="ignoreFirstLine">true</boolProp>
           <boolProp name="quotedData">false</boolProp>
           <boolProp name="recycle">true</boolProp>
@@ -3893,7 +3893,7 @@ vars.put(&quot;eyear&quot;, endDate.getYear().toString())</stringProp>
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
-          <stringProp name="filename">C:/Users/sivasai/Desktop/Arabian_Bank/TestScripts_Sprint_2/Jmeter_scripts/AB_Statements/Ab_statements_testdata.txt</stringProp>
+          <stringProp name="filename">C:\TestData_AB\AB_Testdata\Ab_statements_testdata.txt</stringProp>
           <boolProp name="ignoreFirstLine">true</boolProp>
           <boolProp name="quotedData">false</boolProp>
           <boolProp name="recycle">true</boolProp>
@@ -5748,7 +5748,7 @@ vars.put(&quot;eyear&quot;, endDate.getYear().toString())</stringProp>
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
-          <stringProp name="filename">C:/Users/sivasai/Desktop/Arabian_Bank/TestScripts_Sprint_2/Jmeter_scripts/AB_Loans/Ab_loans_testdata.txt</stringProp>
+          <stringProp name="filename">C:\TestData_AB\AB_Testdata\Ab_loans_testdata.txt</stringProp>
           <boolProp name="ignoreFirstLine">true</boolProp>
           <boolProp name="quotedData">false</boolProp>
           <boolProp name="recycle">true</boolProp>
@@ -7564,7 +7564,7 @@ vars.put(&quot;eyear&quot;, endDate.getYear().toString())</stringProp>
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding">UTF-8</stringProp>
-          <stringProp name="filename">C:/Users/sivasai/Desktop/Arabian_Bank/TestScripts_Sprint_2/Jmeter_scripts/AB_Cards/Ab_cards_Testdara.txt</stringProp>
+          <stringProp name="filename">C:\TestData_AB\AB_Testdata\Ab_cards_Testdara.txt</stringProp>
           <boolProp name="ignoreFirstLine">true</boolProp>
           <boolProp name="quotedData">false</boolProp>
           <boolProp name="recycle">true</boolProp>
@@ -7574,7 +7574,7 @@ vars.put(&quot;eyear&quot;, endDate.getYear().toString())</stringProp>
         </CSVDataSet>
         <hashTree/>
       </hashTree>
-      <PostThreadGroup guiclass="PostThreadGroupGui" testclass="PostThreadGroup" testname="tearDown Thread Group">
+      <PostThreadGroup guiclass="PostThreadGroupGui" testclass="PostThreadGroup" testname="tearDown Thread Group" enabled="true">
         <intProp name="ThreadGroup.num_threads">10</intProp>
         <intProp name="ThreadGroup.ramp_time">10</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -7782,7 +7782,7 @@ vars.put(&quot;eyear&quot;, endDate.getYear().toString())</stringProp>
         <boolProp name="useGroupName">true</boolProp>
       </ResultCollector>
       <hashTree/>
-      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="false">
+      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
